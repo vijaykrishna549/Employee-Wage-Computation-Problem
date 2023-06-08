@@ -1,1 +1,1 @@
-Program to calculate Employee Wage with multiple use cases
+Program to calculate Employee Wage with multiple use cases.
