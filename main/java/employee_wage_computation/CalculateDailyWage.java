@@ -16,8 +16,10 @@ public class CalculateDailyWage {
 //    int toatalEmpHrs = 0;
 
 
-    public void generateAttendance() {
-
+    public int computeEmployeeWage(String company, int empRatePerHour, int numOfWorkingdays, int maximumHoursPerMonth) {
+        int empHrs = 0;
+        int totalWorkingDays=0;
+        int toatalEmpHrs = 0;
         while(totalEmpHrs <= maxHoursPerMonth && totalWorkingDays <= workingDaysPerMonth){
             totalWorkingDays++;
             Random rd = new Random(); // creating Random object
@@ -45,7 +47,8 @@ public class CalculateDailyWage {
             System.out.println("");
         }
         int totalEmpWage = totalEmpHrs * wagePerHour;
-        System.out.println("Total Emp Wage is : " + totalEmpWage);
+        System.out.println("Total Emp Wage for Company : " +company+ " is: " + totalEmpWage);
+        return totalEmpWage;
 
 
 
